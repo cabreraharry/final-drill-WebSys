@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define custom colors */
+:root {
+  --primary-color: #4a90e2; /* Blue */
+  --secondary-color: #1b1e2f; /* Dark Blue */
+  --accent-color: #ff8c37; /* Orange */
+}
+
+/* Apply custom color scheme */
+body {
+  background-color: #8f9299; /* Light Gray */
+  color: #333; /* Dark Gray */
+}
+
+/* Update button styles */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+/* Add subtle box-shadow to elements for depth */
+.shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add gradient effect to headings for elegance */
+.gradient-text {
+  background-image: linear-gradient(to right, #4a90e2, #ff8c37);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
